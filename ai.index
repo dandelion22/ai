@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alpha Intuition</title>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="../codes/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <!--<script src="../codes/js/bootstrap.js"></script>-->
+    <!--<script src="../codes/jquery/jquery.js"></script>-->
+    
+    <script src="script.js"></script>
+    <script src="sweetalert.min.js"></script>
+       
+</head>
+<body>
+
+<div class="text-center">
+<h1>Alpha Intuition</h1>
+
+<div class="scoreBoard" id="gScoreBoard" >
+
+<p class="scoreBoard" id="rScore">Round Score:</p></nbsp> <p class="scoreBoard" id="score">0</p>
+
+<p class="scoreBoard" id="tScore">Total score:</p></nbsp> <p class="scoreBoard" id="totalScore">0</p>
+
+
+</div>
+
+
+</br>
+</br>
+
+
+<button class="btn btn-outline-primary btn-lg" id="start" onclick="selectCard();" >Select a Card</button>
+
+
+
+<div class="choices" id="cardDisplay">
+
+<img id="progressCard" src="img/blank.png">
+
+<p class="choices" id="finalCard"></p>
+
+<p id="description"></p>
+</div>
+
+
+
+<div class="choices" id="choice1">
+
+<button class="bcolor" id="Black"    onclick="selectColor(this.id);" ></button>
+<button class="bcolor" id="Red"     onclick="selectColor(this.id);"   ></button>
+
+</div>
+
+<div class="choices" id="choice2">
+
+<button class="bsuit"   id="Spades"   onclick="selectSuit(this.id);"></button>
+<button class="bsuit"   id="Harts"    onclick="selectSuit(this.id);"></button>
+<button class="bsuit"   id="Clubs"    onclick="selectSuit(this.id);"></button>
+<button class="bsuit"   id="Diamonds" onclick="selectSuit(this.id);"></button>
+
+</div>
+
+
+<div class="choices" id="choice3">
+<button class="bkind"  id="Royal"  onclick="selectKind(this.id);" ></button>
+<button class="bkind"  id="Number" onclick="selectKind(this.id);" ></button>
+</div>
+
+<div class="choices" id="choice4">
+<button class="bparity" id="Odd"  onclick="selectParity(this.id);" ></button>
+<button class="bparity" id="Even" onclick="selectParity(this.id);" ></button>
+</div>
+
+<div class="choices" id="choice5">
+
+<button class="bcard" id="Ace" onclick="pickCard(this.id);"     ><img class="ccard" src=""> <p class="display">A</p></button>
+<button class="bcard" id="Two" onclick="pickCard(this.id);"     ><img class="ccard" src=""> <p class="display">2</p></button>
+<button class="bcard" id="Three" onclick="pickCard(this.id);"   ><img class="ccard" src=""> <p class="display">3</p></button>
+<button class="bcard" id="Four" onclick="pickCard(this.id);"    ><img class="ccard" src=""> <p class="display">4</p></button>
+<button class="bcard" id="Five" onclick="pickCard(this.id);"    ><img class="ccard" src=""> <p class="display">5</p></button>
+<button class="bcard" id="Six" onclick="pickCard(this.id);"     ><img class="ccard" src=""> <p class="display">6</p></button>
+<button class="bcard" id="Seven" onclick="pickCard(this.id);"   ><img class="ccard" src=""> <p class="display">7</p></button>
+<button class="bcard" id="Eight" onclick="pickCard(this.id);"   ><img class="ccard" src=""> <p class="display">8</p></button>
+<button class="bcard" id="Nine" onclick="pickCard(this.id);"    ><img class="ccard" src=""> <p class="display">9</p></button>
+<button class="bcard" id="Ten" onclick="pickCard(this.id);"     ><img class="ccard" src=""> <p class="display">10</p></button>
+<button class="bcard" id="Jack" onclick="pickCard(this.id);"    ><img class="ccard" src=""> <p class="display">J</p></button>
+<button class="bcard" id="Queen" onclick="pickCard(this.id);"   ><img class="ccard" src=""> <p class="display">Q</p></button>
+<button class="bcard" id="King" onclick="pickCard(this.id);"    ><img class="ccard" src=""> <p class="display">K</p></button>
+
+</div>
+
+
+</div>
+
+
+
+
+    
+</body>
+</html>
